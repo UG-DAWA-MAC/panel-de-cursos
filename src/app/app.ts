@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { Encabezado } from './components/encabezado/encabezado';
 import { ListaCursos } from './components/lista-cursos/lista-cursos';
+import { PiePagina } from './components/pie-pagina/pie-pagina';
 
 @Component({
-  imports: [Encabezado, ListaCursos],
+  imports: [Encabezado, ListaCursos, PiePagina],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

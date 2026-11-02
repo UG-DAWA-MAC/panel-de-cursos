@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-lista-cursos',
   styleUrl: './lista-cursos.css',
   templateUrl: './lista-cursos.html',
+  standalone: true,
 })
 
 export class ListaCursos {
