@@ -1,0 +1,82 @@
+<section class="courses-section">
+
+  <div class="courses-grid">
+
+    @for (curso of cursos; track curso.id) {
+
+      <article class="course-card">
+
+        <div class="course-card-header">
+          <h3>{{ curso.materia }}</h3>
+        </div>
+
+        <div class="course-main">
+
+          <div class="course-teacher">
+            <mat-icon>person</mat-icon>
+            <span>{{ curso.docente }}</span>
+          </div>
+
+        </div>
+
+        <div class="course-divider"></div>
+
+        <div class="course-details">
+
+          <div class="detail-item">
+            <mat-icon>groups</mat-icon>
+            <div>
+              <small>Paralelo</small>
+              <span>{{ curso.paralelo }}</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <mat-icon>schedule</mat-icon>
+            <div>
+              <small>Jornada</small>
+              <span>{{ curso.jornada }}</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <mat-icon>school</mat-icon>
+            <div>
+              <small>Semestre</small>
+              <span>{{ curso.semestre }}</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <mat-icon>calendar_month</mat-icon>
+            <div>
+              <small>Periodo</small>
+              <span>{{ curso.periodo }}</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <mat-icon>workspace_premium</mat-icon>
+            <div>
+              <small>Créditos</small>
+              <span>{{ curso.creditos }}</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <mat-icon>computer</mat-icon>
+            <div>
+              <small>Modalidad</small>
+              <span>{{ curso.modalidad }}</span>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+
+    }
+
+  </div>
+
+</section>
